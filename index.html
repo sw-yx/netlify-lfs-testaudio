@@ -1,6 +1,31 @@
-<body>
-  <p>test index</p>
-  <ul>
-    <li><a href="/sampleaudio.mp3">sample audio with LFS</a></li>
-    <li><a href="/sampleaudioNotLFS.mp3">sample audio not LFS</a></li>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>An HTML standard template</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <p>test index</p>
+    <ul>
+      <li>
+        <div>
+          <a href="/sampleaudio.mp3" id="lfs">sample audio with LFS</a>
+          <audio controls src="/sampleaudio.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+          </audio>
+        </div>
+      </li>
+      <li>
+        <div>
+          <a href="/sampleaudioNotLFS.mp3" id="nolfs">sample audio not LFS</a>
+          <audio controls src="/sampleaudioNotLFS.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+          </audio>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
